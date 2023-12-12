@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         mSnackbarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar snackbar = Snackbar.make(v, "Snackbar 2", Snackbar.LENGTH_LONG);
+                Snackbar snackbar = Snackbar.make(v, "Snackbar 3", Snackbar.LENGTH_LONG);
+                snackbar.setDuration(10000);
                 snackbar.setAction("OK", new View.OnClickListener() {
-                    @Override
                     public void onClick(View v) {
                         //
                     }
