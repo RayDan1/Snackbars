@@ -26,8 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mSnackbarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar snackbar = Snackbar.make(mSnackbarLayout, "Snackbar 5",
-                        Snackbar.LENGTH_LONG);
+                Snackbar snackbar = Snackbar.make(v, "Snackbar 6", Snackbar.LENGTH_LONG);
                 snackbar.setDuration(10000);
 
                 snackbar.setAnimationMode(BaseTransientBottomBar.ANIMATION_MODE_SLIDE);
